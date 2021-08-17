@@ -8,10 +8,6 @@ Install Composer:
 Start docker image:
 - `docker-compose up -d`
 
-Run npm commands:
-- `docker-compose exec app npm install`
-- `docker-compose exec app npm run dev`
-
 Run artisan commands:
 - `docker-compose exec app php artisan key:generate`
 - `docker-compose exec app php artisan config:cache`
