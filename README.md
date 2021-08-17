@@ -9,8 +9,6 @@ Start docker image:
 - `docker-compose up -d`
 
 Run artisan commands:
-- `docker-compose exec app php artisan key:generate`
-- `docker-compose exec app php artisan config:cache`
 - `docker-compose exec app php artisan migrate`
 
 (Optional) Set permissions on the project directory so that it is owned by your non-root user:
