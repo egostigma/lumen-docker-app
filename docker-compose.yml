@@ -1,4 +1,5 @@
-version: '3'
+version: '3.9'
+
 services:
 
   # PHP Service
@@ -54,9 +55,9 @@ services:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
-    # volumes:
-    #   - dbdata:/var/lib/mysql-files/
-    #   - ./mysql/my.cnf:/etc/mysql/my.cnf
+    volumes:
+      - dbdata:/var/lib/mysql-files/
+      - ./mysql/my.cnf:/etc/mysql/my.cnf
     networks:
       - app-network
 
@@ -64,7 +65,8 @@ services:
 networks:
   app-network:
     driver: bridge
+
 # Volumes
-# volumes:
-#   dbdata:
-#     driver: local
+volumes:
+  dbdata:
+    driver: local

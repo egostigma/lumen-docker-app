@@ -14,6 +14,3 @@ Run artisan commands:
 
 (Optional) Set permissions on the project directory so that it is owned by your non-root user:
 - `sudo chown -R $USER:$USER ./`
-
-## TODO
-Persist MySQL local data
