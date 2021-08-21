@@ -2,7 +2,7 @@
 
 ## Usage
 
-Install Composer:
+Installing dependencies:
 - `docker run --rm -v $(pwd):/app composer install`
 
 Start docker image:
